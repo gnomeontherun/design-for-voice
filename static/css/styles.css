@@ -4,3 +4,12 @@ figure.guest-photo {
 figure.guest-photo img {
   width: 200px;
 }
+
+.subscribe {
+  margin-left: 0;
+  padding: 0;
+}
+.subscribe li {
+  list-style: none;
+  font-size: 18px;
+}

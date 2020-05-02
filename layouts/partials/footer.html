@@ -1,6 +1,85 @@
 <footer class="footer">
-	{{ partial "social.html" . }}
 
-	{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
-	<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }} crossorigin="anonymous"></script>
+	<p>Design for Voice is a podcast dedicated to sharing knowledge about building meaningful voice experiences.</p>
+
+	<aside>
+		<h3>Subscribe</h3>
+
+		<ul class="subscribe">
+			<li><a href="https://anchor.fm/design-for-voice/" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i0.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/anchor.png?resize=32%2C32&amp;ssl=1"
+						alt="Anchor" height="18" width="18">
+					Anchor
+				</a>
+
+			<li>
+				<a href="https://itunes.apple.com/us/podcast/design-for-voice/id1424770429?mt=2&amp;uo=4" target="_blank"
+					rel="noopener noreferrer">
+					<img
+						src="https://i1.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/apple_podcasts.png?resize=32%2C32&amp;ssl=1"
+						alt="Apple Podcasts Logo" height="18" width="18">
+					Apple Podcasts
+				</a>
+			</li>
+
+			<li> <a href="https://www.google.com/podcasts?feed=aHR0cHM6Ly9hbmNob3IuZm0vcy81MDE3Nzc4L3BvZGNhc3QvcnNz"
+					target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i0.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/google_podcasts.png?resize=32%2C32&amp;ssl=1"
+						alt="Google Podcasts Logo" height="18" width="18">
+					Google Podcast
+				</a></li>
+			<li> <a href="https://www.breaker.audio/design-for-voice" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i0.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/breaker.png?resize=32%2C32&amp;ssl=1"
+						alt="Breaker Logo" height="18" width="18">
+					Breaker
+				</a></li>
+			<li><a href="https://pca.st/bqSk" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i2.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/pocket_casts.png?resize=32%2C32&amp;ssl=1"
+						alt="Pocket Casts Logo" height="18" width="18">
+					Pocket Casts
+				</a></li>
+			<li><a href="https://play.radiopublic.com/design-for-voice-WlPJOM" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i0.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/radiopublic.png?resize=32%2C32&amp;ssl=1"
+						alt="Radio Public Logo" height="18" width="18">
+					Radio Public
+				</a></li>
+			<li> <a href="https://open.spotify.com/show/7nuhHiw1xBv1dZvABAuOOq" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i1.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/spotify.png?resize=32%2C32&amp;ssl=1"
+						alt="Spotify Logo" height="18" width="18">
+					Spotify
+				</a></li>
+			<li><a href="https://www.stitcher.com/podcast/anchor-podcasts/design-for-voice" target="_blank"
+					rel="noopener noreferrer">
+					<img
+						src="https://i1.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/stitcher.png?resize=32%2C32&amp;ssl=1"
+						alt="Stitcher Logo" height="18" width="18">
+					Stitcher
+				</a></li>
+			<li> <a href="https://overcast.fm/itunes1424770429/design-for-voice" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i1.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/004/overcast.png?resize=32%2C32&amp;ssl=1"
+						alt="Overcast Logo" height="18" width="18">
+					Overcast
+				</a></li>
+			<li> <a href="https://castbox.fm/channel/id1395843" target="_blank" rel="noopener noreferrer">
+					<img
+						src="https://i2.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/006/castbox.png?resize=32%2C32&amp;ssl=1"
+						alt="Castbox Logo" height="18" width="18"> Castbox</a>
+			</li>
+			<li><a href="https://www.podbean.com/podcast-detail/pepid-877f9/Design-for-Voice-Podcast" target="_blank"
+					rel="noopener noreferrer"><img
+						src="https://i1.wp.com/d12xoj7p9moygp.cloudfront.net/images/podcast/logo-square/006/podbean.png?resize=32%2C32&amp;ssl=1"
+						alt="PodBean Logo" height="18" width="18"> PodBean</a></li>
+
+		</ul>
+
+		{{ $script := resources.Get "js/main.js" | minify | fingerprint -}}
+		<script src="{{ $script.Permalink }}" {{ printf "integrity=%q" $script.Data.Integrity | safeHTMLAttr }}
+			crossorigin="anonymous"></script>
 </footer>
