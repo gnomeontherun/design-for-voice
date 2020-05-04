@@ -1,4 +1,4 @@
-baseURL = "https://designforvoice.com/"
+baseURL = "/"
 languageCode = "en-us"
 title = "Design For Voice"
 theme = "noteworthy"
